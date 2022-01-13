@@ -1,0 +1,113 @@
+.members {
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+}
+
+.member {
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.member-img img {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.member .member-data {
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+.member .member-data .nome {
+    font-size: 20px;
+}
+
+.member .member-data .nome{
+    padding-left: 1em;
+}
+
+.member .member-data .area {
+    padding-left: 1.25em;
+    padding-bottom: 1em;
+}
+
+.member .member-data .member-content {
+    display: none;
+}
+
+.member span {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 2em;
+    position: absolute;
+    right: 1em;
+    bottom: 1.5em;
+}
+
+.member span.lnk-active {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.member .lnk-member,
+.member .lnk-active {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 22px;
+}
+
+.members .member-details {
+    display: none;
+}
+
+.members .member-details .interno {
+    background: #088cc0;
+    padding: 50px 50px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.members .member-details .nome {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.members .member-details .area {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.members .member-details .conteudo {
+    color: #ddd;
+    line-height: 1;
+    margin-top: 14px;
+}
+
+.member.active .nome,
+.member:hover .nome {
+    color: #088cc0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
